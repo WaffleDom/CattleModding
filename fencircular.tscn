@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://3lwsqslqu33p"]
+
+[ext_resource type="PackedScene" uid="uid://bj6im86gdmb3w" path="res://fencircular.glb" id="1_kyibc"]
+
+[node name="fencircular" instance=ExtResource("1_kyibc")]
+
+[node name="StaticBody3D" parent="Cylinder" index="0"]
+collision_layer = 3

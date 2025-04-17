@@ -1,0 +1,71 @@
+[gd_scene load_steps=5 format=3 uid="uid://6b5fbuv8sfu6"]
+
+[ext_resource type="Script" path="res://Modding/ModOverlay.gd" id="1_ug3g0"]
+[ext_resource type="FontFile" uid="uid://dbj10iq6j0ahu" path="res://IMPACT.TTF" id="1_wf6io"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vmi34"]
+bg_color = Color(0.890196, 0.890196, 0.890196, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p8250"]
+content_margin_left = 5.0
+bg_color = Color(0.892034, 0.892034, 0.892034, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+border_blend = true
+
+[node name="ModOverlay" type="Node2D"]
+z_index = 50
+script = ExtResource("1_ug3g0")
+
+[node name="Console" type="LineEdit" parent="."]
+visible = false
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 104.0
+offset_top = 442.0
+offset_right = 483.0
+offset_bottom = 479.0
+grow_horizontal = 0
+grow_vertical = 0
+size_flags_horizontal = 8
+size_flags_vertical = 8
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0.501407, 0.501406, 0.501406, 1)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_wf6io")
+theme_override_font_sizes/font_size = 0
+theme_override_styles/focus = SubResource("StyleBoxFlat_vmi34")
+theme_override_styles/normal = SubResource("StyleBoxFlat_p8250")
+placeholder_text = "Put ur command here"
+
+[node name="Output" type="LineEdit" parent="Console"]
+layout_mode = 0
+offset_left = 380.0
+offset_right = 535.0
+offset_bottom = 37.0
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0.501407, 0.501406, 0.501406, 1)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/font_uneditable_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_wf6io")
+theme_override_font_sizes/font_size = 10
+theme_override_styles/focus = SubResource("StyleBoxFlat_vmi34")
+theme_override_styles/read_only = SubResource("StyleBoxFlat_vmi34")
+theme_override_styles/normal = SubResource("StyleBoxFlat_p8250")
+text = "Output here"
+placeholder_text = "Output here haha"
+editable = false
