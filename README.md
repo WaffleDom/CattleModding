@@ -2,11 +2,17 @@
 
 Ok so like there is nothing really here
 
-Controls:
-    [`] = Opening console
-    [space] = Jumping when jumping is enabled
+### Controls
 
-Commands:
-    [help] = Returns all commands
-    [jump] (0/1) = Sets jumping enabled or disaled
-    [god] = Toggles god mode
+| Key | Action |
+| ----------- | ----------- |
+| ` | Opens Console |
+| Space | Jumps when jump is enabled |
+
+### Commands
+
+| Command | Info |
+| ----------- | ----------- |
+| help | Returns all commands you can run |
+| jump | (0/1) sets jumping enabled or disabled |
+| god | Toggles god mode |
